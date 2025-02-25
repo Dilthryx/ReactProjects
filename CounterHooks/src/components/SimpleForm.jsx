@@ -3,17 +3,15 @@ import { Message } from './Message';
 
 export const SimpleForm = () => {
   const [formState, setFormState] = useState({
-    username: 'strider',
-    email: 'fernando@google.com'
+    username: 'Dilthryx',
+    email: 'emejia11193@gmail.com'
   });
 
   const { username, email } = formState;
 
   const onInputChange = ({ target }) => {
     const { name, value } = target;
-    setFormState({
-      ...formState,
-      [name]: value
+    setFormState({...formState, [name]: value
     });
   };
 
@@ -49,7 +47,7 @@ export const SimpleForm = () => {
         value={email}
         onChange={onInputChange}
       />
-      {username === 'strider2' && <Message />}
+      {username === 'Dilthryx' && <Message />}
     </>
   );
 };

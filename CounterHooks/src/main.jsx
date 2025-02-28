@@ -4,12 +4,12 @@ import './index.css'
 import App from './App.jsx'
 import { Counter } from './components/Counter.jsx'
 import { SimpleForm } from './components/SimpleForm.jsx'
+import { CustomHook } from './components/CustomHook.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Counter />
-    <SimpleForm />
+    <CustomHook />
 
   </StrictMode>,
 )
